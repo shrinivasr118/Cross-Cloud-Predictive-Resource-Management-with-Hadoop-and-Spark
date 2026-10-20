@@ -3,10 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const navItems = [
   { path: '/', label: 'Overview' },
-  { path: '/forecasts', label: 'Forecasts' },
   { path: '/cross-cloud', label: 'Cross-cloud' },
   { path: '/recommendations', label: 'Recommendations' },
-  { path: '/models', label: 'Models' },
   { path: '/pipeline', label: 'Pipeline' },
   { path: '/about', label: 'About' },
 ];
@@ -16,7 +14,7 @@ export function TopBar() {
     <header className="top-bar">
       <div className="top-bar-inner">
         <NavLink to="/" className="top-bar-brand">
-          Cross-Cloud Resource Forecasting
+          Cross-Cloud Resource Recommendation System
         </NavLink>
         <nav className="top-bar-nav" aria-label="Main Navigation">
           {navItems.map((item) => (
